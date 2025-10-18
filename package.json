@@ -17,9 +17,13 @@
     "url": "https://github.com/diego-24md/Entregable01-FullStack/issues"
   },
   "homepage": "https://github.com/diego-24md/Entregable01-FullStack#readme",
-  "description": "",
+  "description": "Proyecto de API REST con Node.js y Express que permite crear, listar, actualizar y eliminar cursos.\r Base de datos: MySQL (`cursos`).",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "mysql2": "^3.15.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
