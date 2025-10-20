@@ -6,12 +6,14 @@ dotenv.config();
 
 const app = express();
 
-// 🔥 Esto es obligatorio para leer JSON en POST y PUT
+// ✅ Middleware para leer JSON y formularios
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// Rutas
+// ✅ Rutas principales
 app.use('/api/cursos', cursoRoutes);
 
+// ✅ Ruta base
 app.get('/', (req, res) => {
   res.send('API de Cursos funcionando correctamente');
 });
